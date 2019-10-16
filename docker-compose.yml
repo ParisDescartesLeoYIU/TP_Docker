@@ -5,7 +5,7 @@ services:
   image: mariadb
   environment:
     - MYSQL_ROOT_PASSWORD=root
-    - MYSQL_DATABASE=leomariadb
+    - MYSQL_DATABASE=leodatabase
 
  phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -29,4 +29,5 @@ services:
    ports:
     - 8081:80
    volumes:
-    -./:/var/www/html
+    - ./:/var/www/html
+
